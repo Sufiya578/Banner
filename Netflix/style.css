@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto" ,Helvetica, sans-serif;
+}
+
+main {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.8) 100%) , url('./images/bg-image.jpg');
+  height: 100vh;
+  opacity: 3;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* background-blend-mode: overlay; */
+}
+
+
+.logo{
+  display: flex;
+  justify-content:space-between;
+  align-items: center ;
+
+
+  
+}
+ .logo .netflix-logo  img{
+  width: 140px;
+  height: 44px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+ 
+ 
+}
+.logo .netflix-btn{
+  position: absolute;
+  top: 5%;
+  right: 10%;
+
+}
+
+ .logo .netflix-btn select{
+   background-color: rgba(0, 0, 0, 0.6);
+   color:white;
+   border-radius: 5px;
+   padding: 6px 15px; 
+   font-weight: 500;
+}
+
+ .logo .netflix-btn button{
+   background-color: #E50914 ;
+   border: none;
+   padding: 6px 15px;
+   border-radius: 5px;
+   margin-left: 2px;
+ }
+
+ 
+ .logo .netflix-btn button a{
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 500;
+
+ }
+
+.title{
+  text-align: center;
+  margin-top: 70px;
+}
+
+  .title h1{
+  font-family:  Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 51px;
+
+ }
+
+.title h2{
+  font-weight: 400;
+  font-size: 26px;
+  padding-top: 18px;
+ 
+ }
+
+.title p{
+  padding-top: 18px;
+  font-size: 21px ;
+  font-weight: 400;
+  line-height: 32px;
+
+ }
+
+.email-address{
+  padding-top: 15px; 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+input[type="email"] {
+  width: 385px;
+  height: 58px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+  padding: 15px 24px;
+  margin-right: 6px;
+  border: 1px solid #818181a8;
+}
+input::placeholder{
+  color: #bfb8b8;
+  line-height: 26px;
+  font-size: 17px;
+  font-weight:400;
+
+}
+input{
+  color: white;
+ 
+}
+input:focus{
+  border-top: transparent;
+}
+.email-address button{
+width: 221px;
+height: 58px;
+border-radius: 5px;
+line-height: 26px;
+color: white;
+font-size: 26px;
+font-weight: 500;
+background-color: #E50914;
+border:none;
+
+}
