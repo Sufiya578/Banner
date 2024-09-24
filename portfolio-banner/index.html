@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+    font-family: 'Angel';
+    src: url(./angel-3-font/AngelDemoRegular-p7GaR.otf);
+    font-weight: normal;
+    font-style: normal;
+
+}
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      font-family: 'Angel';
+      }
+      html{
+        overflow: hidden;
+      }
+      body {
+        height: 100vh;
+      }
+      section {
+        height: 100%;
+        width: 100%;
+        background-image: url(./bg-2.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        z-index: 999;
+        transition: all 0.3s linear;
+
+      }
+      .parent {
+        padding-left: 50px;
+      }
+      .parent h1{
+        color: white;
+        font-weight: 300;
+        font-size: 75px;
+        /* color:#E2CB95; */
+        /* line-height: 1.5; */
+        /* margin-block: 20px; */
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.55);
+      
+      }
+      .parent h2{
+        color: white;
+        font-weight: 300;
+        font-size: 85px;
+        /* color:#E2CB95; */
+        /* line-height: 1.5; */
+        /* margin-block: 20px; */
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.55);
+      
+      }
+      .parent h3 {
+        color: white;
+        font-weight: 300;
+        font-size: 35px;
+        /* color:#E2CB95; */
+        /* line-height: 1; */
+        /* margin-block: 20px; */
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.55);
+      }
+       
+      .parent a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 28px;
+        font-weight: 600;
+        /* color: white; */
+        color:#E2CB95;
+        text-align: center;
+        background-color: transparent;
+        padding-top: 8px;
+        padding-inline: 40px;
+        margin-top: 10px;
+        border-radius: 10px;
+        border: 1px solid #E2CB95;
+        transition: all 0.3s linear;
+        z-index: 1;
+      }
+      .child {
+        width: 100%;
+        height:100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(./cute-anime-fairy-girl.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -99;
+        transform: scale(0.2);
+        transition: all 0.3s linear;
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      a:hover {
+        background-color: transparent;
+        background-color: #F5BFCD;
+        color: white;
+       border-color: #F5BFCD;
+       text-shadow: 2px 2px 3px rgba(100, 100, 255, 0.55);
+    
+
+      } 
+      a:hover + .child{
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+      }
+/* 
+      section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index:-1;
+      } */
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="parent">
+        <h1>Hi</h1>
+        <h2>i'm A Sufiya </h2>
+        <h3>UI & UX Dsigner</h3>
+        <a href="#">Hire Now</a>
+        <div class="child"></div>
+      </div>
+    </section>
+  </body>
+</html>
